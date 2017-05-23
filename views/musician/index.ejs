@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>DYM GAMES - 뮤지션 페이지</title>
+
+    <%- include header %>
+  </head>
+
+  <body>
+
+    <section id="container" >
+    <!-- **********************************************************************************************************************************************************
+    TOPBAR CONTENT
+
+    *********************************************************************************************************************************************************** -->
+    <%- include ../shared/_topbar %>
+    <!-- **********************************************************************************************************************************************************
+    SIDEBAR CONTENT
+
+    *********************************************************************************************************************************************************** -->
+    <%- include ../shared/_sidebar %>
+
+
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      <section id="main-content">
+        <section class="wrapper">
+
+          <div class="row">
+            <div class="col-lg-9 main-chart">
+
+            	 <div class="row mtbox">
+              		<div class="col-md-2 col-sm-2 col-md-offset-1 box0">
+              			<div class="box1">
+  			              <span class="li_heart"></span>
+  			              <h3>933</h3>
+              			</div>
+  			            <p>933명의 사람들이 당신을 응원하고 있습니다!</p>
+              		</div>
+          		    <div class="col-md-2 col-sm-2 box0">
+        			     <div class="box1">
+  			             <span class="li_user"></span>
+  			             <h3>+48</h3>
+            			</div>
+  			          <p>새로운 48명의 사람들이 당신의 클럽에 가입했습니다</p>
+            		</div>
+            		<div class="col-md-2 col-sm-2 box0">
+            			<div class="box1">
+  			            <span class="li_music"></span>
+  			            <h3>7</h3>
+            			</div>
+  			          <p>현재 총 7개의 곡을 배포 중입니다.</p>
+            		</div>
+            		<div class="col-md-2 col-sm-2 box0">
+            			<div class="box1">
+			              <span class="li_shop"></span>
+			              <h3>+137</h3>
+            			</div>
+			            <p>당신의 음원을 구매한 새로운 137명이 있습니다.</p>
+            		</div>
+            		<div class="col-md-2 col-sm-2 box0">
+            			<div class="box1">
+  			            <span class="li_data"></span>
+  			            <h3>￦2,138,000</h3>
+            			</div>
+			            <p>오늘 ￦2,138,000의 수익을 올렸습니다. </p>
+                </div>
+            	</div><!-- /row mt -->
+
+              <div class="row mt">
+              <!-- SERVER STATUS PANELS -->
+              	<div class="col-md-4 col-sm-4 mb">
+              		 <div class="white-panel pn donut-chart">
+	                   <div class="white-header">
+	                      <h5>나의 곡 만족도</h5>
+              			</div>
+		                <div class="row">
+			                <div class="col-sm-6 col-xs-6 goleft">
+			                   <p><i class="fa fa-database"></i> 99%</p>
+			                </div>
+                		</div>
+			              <canvas id="serverstatus01" height="120" width="120"></canvas>
+    								<script>
+    									var doughnutData = [
+    											{
+    												value: 99,
+    												color:"#68dff0"
+    											},
+    											{
+    												value : 1,
+    												color : "#fdfdfd"
+    											}
+    										];
+    										var myDoughnut = new Chart(document.getElementById("serverstatus01").getContext("2d")).Doughnut(doughnutData);
+    								</script>
+                	</div>
+              	</div>
+
+
+              	<div class="col-md-4 col-sm-4 mb">
+              		<div class="white-panel pn">
+              			<div class="white-header">
+			                <h5>나의 최고 인기 곡</h5>
+              			</div>
+			              <div class="row">
+			                <div class="col-sm-6 col-xs-6 goleft">
+				                <p><i class="fa fa-heart"></i> 122</p>
+				              </div>
+				              <div class="col-sm-6 col-xs-6"></div>
+                		</div>
+                		<div class="centered">
+				              <img src="assets/images/musician/wooa.jpg" width="150">
+                		</div>
+              		</div>
+              	</div>
+
+    						<div class="col-md-4 mb">
+    							<!-- WHITE PANEL - TOP USER -->
+    							<div class="white-panel pn">
+    								<div class="white-header">
+    									<h5>최고 후원자</h5>
+    								</div>
+						        <p><img src="assets/images/musician/KJS.jpg" class="img-circle" width="80"></p>
+		                <p><b>김진석</b></p>
+    								<div class="row">
+    									<div class="col-md-6">
+    										<p class="small mt">팬 가입연도<br>2017</p>
+    										<!--<p>2017</p>-->
+    									</div>
+    									<div class="col-md-6">
+    										<p class="small mt">누적 후원금<br>￦470,600,000</p>
+
+    									</div>
+    								</div>
+    							</div>
+    						</div><!-- /col-md-4 -->
+              </div><!-- /row -->
+
+    					<div class="row">
+    						<!-- TWITTER PANEL -->
+    						<div class="col-md-4 mb">
+              		<div class="darkblue-panel pn">
+              			<div class="darkblue-header">
+	  			             <h5>DROPBOX STATICS</h5>
+              			</div>
+			              <canvas id="serverstatus02" height="120" width="120"></canvas>
+    								<script>
+    									var doughnutData = [
+    											{
+    												value: 60,
+    												color:"#68dff0"
+    											},
+    											{
+    												value : 40,
+    												color : "#444c57"
+    											}
+    										];
+    										var myDoughnut = new Chart(document.getElementById("serverstatus02").getContext("2d")).Doughnut(doughnutData);
+    								</script>
+		                <p>5. 10. 2017</p>
+    								<footer>
+    									<div class="pull-left">
+    										<h5><i class="fa fa-hdd-o"></i> 17 GB</h5>
+    									</div>
+    									<div class="pull-right">
+    										<h5>60% Used</h5>
+    									</div>
+    								</footer>
+              		</div><!-- /darkblue panel -->
+	              </div><!-- /col-md-4 -->
+
+        				<div class="col-md-4 mb">
+        					<!-- INSTAGRAM PANEL -->
+        					<div class="instagram-panel pn">
+        						<i class="fa fa-instagram fa-4x"></i>
+        						<p>@THISISYOU<br/>
+        							5 min. ago
+        						</p>
+        						<p><i class="fa fa-comment"></i> 18 | <i class="fa fa-heart"></i> 49</p>
+        					</div>
+        				</div><!-- /col-md-4 -->
+
+    						<div class="col-md-4 col-sm-4 mb">
+    							<!-- REVENUE PANEL -->
+    							<div class="darkblue-panel pn">
+    								<div class="darkblue-header">
+    									<h5>수입현황</h5>
+    								</div>
+    								<div class="chart mt">
+    									<div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,464,655]"></div>
+    								</div>
+    								<p class="mt"><b>￦9,007,980</b><br/>이번달 수입</p>
+    							</div>
+    						</div><!-- /col-md-4 -->
+    				</div><!-- /row -->
+
+				    <div class="row mt">
+                <!--CUSTOM CHART START -->
+                <div class="border-head">
+                    <h3>내 채널 방문자 수</h3>
+                </div>
+                <div class="custom-bar-chart">
+                    <ul class="y-axis">
+                        <li><span>10.000</span></li>
+                        <li><span>8.000</span></li>
+                        <li><span>6.000</span></li>
+                        <li><span>4.000</span></li>
+                        <li><span>2.000</span></li>
+                        <li><span>0</span></li>
+                    </ul>
+                    <div class="bar">
+                        <div class="title">1월</div>
+                        <div class="value tooltips" data-original-title="8.500" data-toggle="tooltip" data-placement="top">85%</div>
+                    </div>
+                    <div class="bar ">
+                        <div class="title">2월</div>
+                        <div class="value tooltips" data-original-title="5.000" data-toggle="tooltip" data-placement="top">50%</div>
+                    </div>
+                    <div class="bar ">
+                        <div class="title">3월</div>
+                        <div class="value tooltips" data-original-title="6.000" data-toggle="tooltip" data-placement="top">60%</div>
+                    </div>
+                    <div class="bar ">
+                        <div class="title">4월</div>
+                        <div class="value tooltips" data-original-title="4.500" data-toggle="tooltip" data-placement="top">45%</div>
+                    </div>
+                    <div class="bar">
+                        <div class="title">5월</div>
+                        <div class="value tooltips" data-original-title="3.200" data-toggle="tooltip" data-placement="top">32%</div>
+                    </div>
+                    <div class="bar ">
+                        <div class="title">6월</div>
+                        <div class="value tooltips" data-original-title="6.200" data-toggle="tooltip" data-placement="top">62%</div>
+                    </div>
+                    <div class="bar">
+                        <div class="title">7월</div>
+                        <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
+                    </div>
+                </div>
+                <!--custom chart end-->
+	           </div><!-- /row -->
+           </div><!-- /col-lg-9 END SECTION MIDDLE -->
+
+
+          <!-- **********************************************************************************************************************************************************
+          RIGHT SIDEBAR CONTENT
+          *********************************************************************************************************************************************************** -->
+
+          <div class="col-lg-3 ds">
+            <!--COMPLETED ACTIONS DONUTS CHART-->
+            <h3>소식 알림</h3>
+
+            <!-- First Action -->
+            <div class="desc">
+            	<div class="thumb">
+            		<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+            	</div>
+            	<div class="details">
+            		<p><muted>2분 전</muted><br/>
+            		   <a href="#">이도균</a> 님이 당신에게 ￦100,000을 후원했습니다.<br/>
+            		</p>
+            	</div>
+            </div>
+            <!-- Second Action -->
+            <div class="desc">
+            	<div class="thumb">
+            		<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+            	</div>
+            	<div class="details">
+            		<p><muted>3시간 전</muted><br/>
+            		   <a href="#">DYM GAMES</a> 6월달 수입이 들어왔습니다. <a href="#">확인하러 가기!</a><br/>
+            		</p>
+            	</div>
+            </div>
+            <!-- Third Action -->
+            <div class="desc">
+            	<div class="thumb">
+            		<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+            	</div>
+            	<div class="details">
+            		<p><muted>5시간 전</muted><br/>
+            		   <a href="#">Brandon Page</a> 님이 당신의 음악을 구매했습니다.<br/>
+            		</p>
+            	</div>
+            </div>
+            <!-- Fourth Action -->
+            <div class="desc">
+            	<div class="thumb">
+            		<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+            	</div>
+            	<div class="details">
+            		<p><muted>11시간 전</muted><br/>
+            		   <a href="#">Mark Twain</a> 님이 당신의 곡을 <a href="">찜</a>했습니다.<br/>
+            		</p>
+            	</div>
+            </div>
+            <!-- Fifth Action -->
+            <div class="desc">
+            	<div class="thumb">
+            		<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+            	</div>
+            	<div class="details">
+            		<p><muted>18시간 전</muted><br/>
+            		   <a href="#">서영빈</a> 님이 당신에게 ￦50,000을 후원했습니다.<br/>
+            		</p>
+            	</div>
+            </div>
+
+             <!-- USERS ONLINE SECTION -->
+             <h3>나의 팬들</h3>
+                <!-- First Member -->
+                <div class="desc">
+                	<div class="thumb">
+                		<img class="img-circle" src="assets/images/musician/ui-divya.jpg" width="35px" height="35px" align="">
+                	</div>
+                	<div class="details">
+                		<p><a href="#">DIVYA MANIAN</a><br/>
+                		   <muted>신규곡 대박이에요!!</muted>
+                		</p>
+                	</div>
+                </div>
+                <!-- Second Member -->
+                <div class="desc">
+                	<div class="thumb">
+                		<img class="img-circle" src="assets/images/musician/ui-sherman.jpg" width="35px" height="35px" align="">
+                	</div>
+                	<div class="details">
+                		<p><a href="#">DJ SHERMAN</a><br/>
+                		   <muted>Ur song is really crazy and fantastic!!</muted>
+                		</p>
+                	</div>
+                </div>
+                <!-- Third Member -->
+                <div class="desc">
+                	<div class="thumb">
+                		<img class="img-circle" src="assets/images/musician/KJS.jpg" width="35px" height="35px" align="">
+                	</div>
+                	<div class="details">
+                		<p><a href="#">김진석</a><br/>
+                		   <muted>후원하고 갑니다ㅎㅎ</muted>
+                		</p>
+                	</div>
+                </div>
+                <!-- Fourth Member -->
+                <div class="desc">
+                	<div class="thumb">
+                		<img class="img-circle" src="assets/images/musician/ui-zac.jpg" width="35px" height="35px" align="">
+                	</div>
+                	<div class="details">
+                		<p><a href="#">Zac Sniders</a><br/>
+                		   <muted>Hello, I'm a big fan of u. 팬가입 수락해주셔서 감사합니다!^^</muted>
+                		</p>
+                	</div>
+                </div>
+                <!-- Fifth Member -->
+                <div class="desc">
+                	<div class="thumb">
+                		<img class="img-circle" src="assets/images/musician/ui-sam.jpg" width="35px" height="35px" align="">
+                	</div>
+                	<div class="details">
+                		<p><a href="#">Marcel Newman</a><br/>
+                		   <muted>I wanna invite you to my DJ concert held in NewYork. Feel free to contact me.</muted>
+                		</p>
+                	</div>
+                </div>
+
+                  <!-- CALENDAR-->
+                <div id="calendar" class="mb">
+                  <div class="panel green-panel no-margin">
+                    <div class="panel-body">
+                      <div id="date-popover" class="popover top" style="cursor: pointer; disadding: block; margin-left: 33%; margin-top: -50px; width: 175px;">
+                        <div class="arrow"></div>
+                        <h3 class="popover-title" style="disadding: none;"></h3>
+                        <div id="date-popover-content" class="popover-content"></div>
+                      </div>
+                      <div id="my-calendar"></div>
+                    </div>
+                  </div>
+                </div><!-- / calendar -->
+              </div><!-- /col-lg-3 -->
+            </div><!--/row -->
+        </section>
+      </section>
+
+      <!--main content end-->
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center">
+              2017 - DYM GAMES
+              <a href="index#" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+          </div>
+      </footer>
+      <!--footer end-->
+    </section>
+
+
+  	<script type="text/javascript">
+      $(document).ready(function () {
+      var unique_id = $.gritter.add({
+          // (string | mandatory) the heading of the notification
+          title: '안내',
+          // (string | mandatory) the text inside the notification
+          text: 'DYM GAMES 뮤지션 페이지입니다. 뮤지션 분들을 위한 일정관리 기능이 추가되었습니다. 자세한 사항은 <a href="http://blacktie.co" target="_blank" style="color:#ffd777">여기</a>를 참고해주세요.',
+          // (string | optional) the image to display on the left
+          image: 'assets/images/musician/zoom.png',
+          // (bool | optional) if you want it to fade out on its own or just sit there
+          sticky: true,
+          // (int | optional) the time you want it to be alive for before fading out
+          time: '',
+          // (string | optional) the class name you want to apply to that specific message
+          class_name: 'my-sticky-class'
+      });
+
+      return false;
+      });
+  	</script>
+
+  	<script type="application/javascript">
+      $(document).ready(function () {
+          $("#date-popover").popover({html: true, trigger: "manual"});
+          $("#date-popover").hide();
+          $("#date-popover").click(function (e) {
+              $(this).hide();
+          });
+
+          $("#my-calendar").zabuto_calendar({
+              action: function () {
+                  return myDateFunction(this.id, false);
+              },
+              action_nav: function () {
+                  return myNavFunction(this.id);
+              },
+              ajax: {
+                  url: "show_data.php?action=1",
+                  modal: true
+              },
+              legend: [
+                  {type: "text", label: "Special event", badge: "00"},
+                  {type: "block", label: "Regular event", }
+              ]
+          });
+      });
+
+      function myNavFunction(id) {
+          $("#date-popover").hide();
+          var nav = $("#" + id).data("navigation");
+          var to = $("#" + id).data("to");
+          console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+      }
+    </script>
+  </body>
+</html>

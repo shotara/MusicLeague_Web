@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>DYM GAME - 뮤지션 페이지</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/musician/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/musician/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/musician/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="assets/musician/jquery.gritter.css">
+        <link rel="stylesheet" type="text/css" href="assets/musician/jquery.gritter0.css">
+    <link rel="stylesheet" type="text/css" href="assets/musician/style.css">    
+    <link rel="stylesheet" type="text/css" href="assets/musician/style2.css">    
+    <link rel="stylesheet" type="text/css" href="assets/musician/bootstrap-fullcalendar.css">    
+    <script src="https://use.fontawesome.com/d444317d13.js"></script>
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/musician/style.css" rel="stylesheet">
+    <link href="assets/musician/style-responsive.css" rel="stylesheet">
+
+    <script src="assets/musician/Chart.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  <section id="container" >
+      <!-- **********************************************************************************************************************************************************
+      TOPBAR CONTENT
+      *********************************************************************************************************************************************************** -->
+
+        <%= render partial: "shared/topbar" %>
+
+      
+      <!-- **********************************************************************************************************************************************************
+      SIDEBAR CONTENT
+      *********************************************************************************************************************************************************** -->
+
+        <%= render partial: "shared/sidebar" %>
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+              <div class="row">
+                  <div class="col-lg-9 main-chart">
+                    노트메이커 위치
+                  </div><!-- /col-lg-3 -->
+              </div><! --/row -->
+          </section>
+      </section>
+
+      <!--main content end-->
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center">
+              2017 - DYM GAMES
+              <a href="index#" class="go-top">
+                  <i class="fa fa-angle-up"></i> 
+              </a>
+          </div>
+      </footer>
+      <!--footer end-->
+  </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="assets/musician/jquery.js"></script>
+    <script src="assets/musician/jquery-1.8.3.min.js"></script>
+    <script src="assets/musician/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="assets/musician/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="assets/musician/jquery.scrollTo.min.js"></script>
+    <script src="assets/musician/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="assets/musician/jquery.sparkline.js"></script>
+    <script src="assets/musician/fullcalendar.min.js"></script>
+
+
+    <!--common script for all pages-->
+    <script src="assets/musician/common-scripts.js"></script>
+    
+    <script type="text/javascript" src="assets/musician/jquery.gritter.js"></script>
+    <script type="text/javascript" src="assets/musician/gritter-conf.js"></script>
+
+    <!--script for this page-->
+    <script src="assets/musician/sparkline-chart.js"></script>    
+	<script src="assets/musician/zabuto_calendar.js"></script>	
+	
+
+
+  </body>
+</html>

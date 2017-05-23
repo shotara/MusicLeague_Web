@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>신개념 리듬게임 DYM 공식페이지</title>
+    <!-- /.website title -->
+    <title>리듬게임의 새역사</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- include header -->
+    <%- include ../header %>
+    <!--네비게이션 구현-->
+    <nav class="navbar navbar-default navbar-fixed-top" style="background:black">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://bootstraptest-jin-gyo-jung.c9users.io/">DYM GAMES</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#top">홈<span class="sr-only">(current)</span></a></li>
+            <li><a href="#feature">게임소개</a></li>
+            <li><a href="#rank">인기랭킹</a></li>
+            <li><a href="#reservation">사전예약</a></li>
+            <li><a href="#contact">문의하기</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="검색할 아티스트 or 곡명">
+            </div>
+            <button type="submit" class="btn btn-default">검색하기</button>
+            <button type="submit" class="btn btn-default">로그인</button>
+            <a href="musician/login"><button type="submit" class="btn btn-default">마이 페이지</button></a>
+          </form>
+
+          <!--<ul class="nav navbar-nav navbar-right">-->
+          <!--  <li><a href="#">Link</a></li>-->
+          <!--  <li class="dropdown">-->
+          <!--    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+          <!--    <ul class="dropdown-menu">-->
+          <!--      <li><a href="#">Action</a></li>-->
+          <!--      <li><a href="#">Another action</a></li>-->
+          <!--      <li><a href="#">Something else here</a></li>-->
+          <!--      <li role="separator" class="divider"></li>-->
+          <!--      <li><a href="#">Separated link</a></li>-->
+          <!--    </ul>-->
+          <!--  </li>-->
+          <!--</ul>-->
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+     <!--네비게이션 끝-->
+  </head>
+  <body style="padding-top:50px;">
+    <!-- /.preloader -->
+    <div id="preloader"></div>
+
+    <div id="top"></div>
+
+    <!-- /.parallax full screen background image -->
+    <div class="fullscreen landing slideshow" style="paddint-top:600px;">
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <!-- /.logo -->
+              <div class="logo wow fadeInDown "> <a href=""><img src="assets/images/home/DYM Games.png" alt="logo"></a></div>
+              <!-- /.main title -->
+              <h1>Coming Soon</h1>
+              <!-- /.count down timer -->
+              <ul class="countdown">
+                <li>
+                  <div class="numb wow fadeInUp">
+                    <span class="days">00</span>
+                      <p class="days_ref">days</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="numb wow fadeInUp">
+                    <span class="hours">00</span>
+                    <p class="hours_ref">hours</p>
+                  </div>
+                </li>
+                  <li>
+                    <div class="numb wow fadeInUp">
+                      <span class="minutes">00</span>
+                      <p class="minutes_ref">minutes</p>
+                    </div>
+                  </li>
+                <li>
+                  <div class="numb wow fadeInUp">
+                    <span class="seconds">00</span>
+                    <p class="seconds_ref">seconds</p>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- /.header paragraph -->
+              <div class="working">
+                  <p>새로운 게임 프로젝트를 진행중입니다. </br>사전예약을 통해 가장 먼저 런칭 소식을 접해보세요!</p>
+              </div>
+
+              <!-- /.header menu -->
+              <div class="more wow fadeInLeft">
+                  <a href="#feature" class="btn option"><i class="fa fa-apple"></i>게임소개</a>
+                  <a href="#subscribe" class="btn option"><i class="fa fa-send"></i>사전예약</a>
+                  <a href="#contact" class="btn option"><i class="fa fa-map-marker"></i>문의하기</a>
+              </div>
+            </div>
+
+            <!-- /.phone image -->
+            <div class="col-md-5">
+              <img src="assets/images/home/phone1.png" alt="mac" class="header-phone img-responsive wow fadeInRight">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /.feature section -->
+    <div id="feature">
+      <div class="container">
+        <div class="row">
+          <!-- /.apple devices image -->
+          <div class="col-md-6 about-pic wow slideInLeft">
+              <img src="assets/images/home/phone1.png" alt="macbook" class="img-responsive">
+          </div>
+
+          <!-- /.feature list -->
+          <div class="col-md-6 wow slideInRight">
+            <h1>리듬게임의 <span class="highlight">새역사</span></h1>
+            <p><a href="#">DYM</a>은 다음과 같은 경험을 고객에게 제공합니다. (게임+플랫폼)</p>
+            <ul class="feature">
+              <!-- /.feature 1 -->
+              <li>
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <i class="fa fa-user-o"></i>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <h4><a href="#">유저가 직접 만들어가는 리듬게임</a></h4>
+                    <p>DYM에선 누구나 직접 노트를 찍을 수 있습니다. 이제는 본인이 원하는 곡을 직접 찍고 배포해보세요.</p>
+                    <p>※음원 저작권 및 책임은 음원/노트 제공자에게 있습니다.
+                       곡이 적어서 아쉬웠던 추억은 안녕~ 이젠 전세계 뮤지션들이 참여하는 다양한 곡을 즐기세요!
+                    <a href="https://bootstraptest-jin-gyo-jung.c9users.io/musician"><p>뮤지션 전용 페이지 바로가기</p></a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- /.feature 2 -->
+              <li>
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <i class="fa fa-music"></i>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <h4><a href="#">뮤지션들을 위한 플랫폼</a></h4>
+                    <p>웹기반 툴을 통해 손쉽게 곡 제작 및 배포가 가능합니다. 음원을 통해 수익이 발생할 경우, 수익의 70%를 음원 제공자분께 제공합니다. </p>
+                    <p>DYM은 초보 뮤지션도 쉽게 자신의 꿈에 다가갈 수 있도록 다양한 기능을 제공합니다. (음원 제작, 배포툴 지원, 팬 커뮤니티, 후원 기능 등) </p>
+                  </div>
+                </div>
+              </li>
+              <!-- /.feature 3 -->
+              <li>
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <i class="fa fa-leaf"></i>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <h4><a href="#">플레이로 기부하라</a></h4>
+                    <p>홍보채널 제공 및 전체 순수익의 10%를 음악활동에 지원합니다. </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- /.인기랭킹&투표 -->
+    <div id="rank" style="background-color:#faf6d1; padding-top:100px;">
+      <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="assets/images/home/BG1.jpg" alt="...">
+              <div class="carousel-caption">
+                ...
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/home/BG2.jpg" alt="...">
+              <div class="carousel-caption">
+                ...
+              </div>
+            </div>
+            ...
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- /.subscribe section -->
+    <div id="reservation">
+      <div class="container">
+
+        <!-- /.mail icon -->
+        <div class="col-md-4 col-md-offset-4 text-center">
+          <img src="assets/images/home/phone2.png" class="img-responsive" alt="Responsive image" style="padding-top:100px;">
+          <!--<i class="fa fa-envelope letter wow fadeInUp"></i>-->
+        </div>
+
+        <!-- /.subscribe form -->
+        <div class="col-md-8 col-md-offset-2">
+          <div class="subscribe-form wow fadeInUp">
+            <h4>사전예약 등록하고 푸짐한 혜택을 받아보세요</h4>
+            <form class="news-letter" action="#" method="post">
+              <input class="form-control" type="text" name="news_later_email" placeholder="휴대폰 번호를 입력해 주세요 (-)없이 입력해 주세요." required="">
+              <button type="submit" class="subscribe-btn btn"><i class="fa fa-send"></i></button>
+            </form>
+          </div>
+
+          <!-- /.download button -->
+          <div class="download-section text-center wow fadeInUp">
+            <a href="#" class="btn download"><i class="fa fa-cloud-download"></i>사전예약 신청</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /.contact section -->
+    <div id="contact">
+
+      <!-- /.google maps -->
+      <div id="googlemaps"></div>
+      <div class="container">
+        <div class="row contact-row">
+
+          <!-- /.address and contact -->
+          <div class="col-sm-5 contact-left wow fadeInUp">
+            <h2><span class="highlight">Contact</span> Us</h2>
+            <ul class="ul-address">
+              <li><i class="fa fa-map-marker"></i>경기도 성남시 판교테크노밸리 271</br>
+              </li>
+              <li><i class="fa fa-mobile"></i>+82 (031) 864-7890</br>
+                  +82 (031) 864-7891
+              </li>
+              <li><i class="fa fa-edit"></i>admin@dymgames.com</li>
+              <li><i class="fa fa-link"></i>www.dymgames.com</li>
+            </ul>
+
+            <!-- /.social links -->
+            <div class="social text-center">
+              <ul class="social">
+                <li><a href="https://youtube.com/"><i class="fa fa-youtube-play"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- /.contact form -->
+          <div class="col-sm-7 contact-right wow fadeInUp">
+            <form method="POST" id="contact-form" class="form-horizontal" action="contactengine.php" onSubmit="alert( '의견을 보내주셔서 감사합니다!' );">
+              <div class="form-group">
+                <input type="text" name="Name" id="Name" class="form-control" placeholder="이름" required/>
+              </div>
+              <div class="form-group">
+                <input type="text" name="Email" id="Email" class="form-control" placeholder="이메일" required/>
+              </div>
+              <div class="form-group">
+                <textarea name="Message" rows="20" cols="20" id="Message" class="form-control input-message"  placeholder="하실말씀" required></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" name="submit" value="제출하기" class="btn btn-success" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /.twitter section -->
+    <!--<div class="last-tweet fullscreen parallax" style="background-image:url('assets/picjumbo.com_IMG_6533.jpg');" data-img-width="2000" data-img-height="1333" data-diff="100">-->
+    <!--<iframe width="200" height="200" src="https://www.youtube.com/embed/a4IosLAbLXY" frameborder="0" allowfullscreen=""></iframe>-->
+
+
+        <!--<div class="overlay">-->
+        <!--    <div class="container">-->
+        <!--        <div class="col-sm-2">-->
+        <!--        </div>-->
+        <!--        <div class="col-sm-8 text-center col-twit wow fadeInRight">-->
+        <!--            <h1>DYM GAMES</h1>-->
+        <!--            <div id="tweets"></div>-->
+        <!--        </div> -->
+
+        <!--    </div>		-->
+        <!--</div> 	-->
+    </div>
+
+    <!-- /.footer -->
+    <%- include ../footer %>
+  </body>
+</html>
