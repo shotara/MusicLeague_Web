@@ -9,16 +9,8 @@
 
     <title>DYM GAMES - 뮤지션 페이지</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/musician/bootstrap.css" rel="stylesheet">
-    <!--external css-->
-    <link href="assets/musician/font-awesome.css" rel="stylesheet" />
-        
-    <!-- Custom styles for this template -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="assets/musician/style.css" rel="stylesheet">
-    <link href="assets/musician/style-responsive.css" rel="stylesheet">
 
+    <%- include header %>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -29,20 +21,15 @@
   <body>
 
   <section id="container" >
-       <!-- **********************************************************************************************************************************************************
+      <!-- **********************************************************************************************************************************************************
       TOPBAR CONTENT
       *********************************************************************************************************************************************************** -->
-
-        <%= render partial: "shared/topbar" %>
-
-      
-      
+      <%- include ../shared/_topbar %>
       <!-- **********************************************************************************************************************************************************
       SIDEBAR CONTENT
       *********************************************************************************************************************************************************** -->
+      <%- include ../shared/_sidebar %>
 
-        <%= render partial: "shared/sidebar" %>
-      
       <!-- **********************************************************************************************************************************************************
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
@@ -51,7 +38,7 @@
           <section class="wrapper">
           	<h3><i class="fa fa-angle-right"></i> Basic Table Examples</h3>
 				<div class="row">
-				
+
 	                  <div class="col-md-12">
 	                  	  <div class="content-panel">
 	                  	  	  <h4><i class="fa fa-angle-right"></i> Basic Table</h4>
@@ -88,7 +75,7 @@
 		                      </table>
 	                  	  </div><! --/content-panel -->
 	                  </div><!-- /col-md-12 -->
-                  
+
 	                  <div class="col-md-12 mt">
 	                  	<div class="content-panel">
 	                          <table class="table table-hover">
@@ -244,7 +231,7 @@
     <script src="assets/musician/common-scripts.js"></script>
 
     <!--script for this page-->
-    
+
   <script>
       //custom select box
 
