@@ -93,16 +93,6 @@ var Script = function () {
     });
 
 
-//    tool tips
-
-    $('.tooltips').tooltip();
-
-//    popovers
-
-    $('.popovers').popover();
-
-
-
 // custom bar chart
 
     if ($(".custom-bar-chart")) {
@@ -114,6 +104,14 @@ var Script = function () {
             }, 2000)
         })
     }
+
+    //    tool tips
+
+    $('.tooltips').tooltip();
+
+    //    popovers
+
+    $('.popovers').popover();
 
 
 }();
