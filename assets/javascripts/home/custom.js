@@ -12,7 +12,7 @@ jQuery( document ).ready( function ( $ ) {
 
     /* countdown */
     $( '.countdown' ).downCount( {
-        date: '5/27/2017 12:00:00',
+        date: '9/15/2017 12:00:00',
         offset: +10
     } );
 
